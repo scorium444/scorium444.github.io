@@ -1,5 +1,5 @@
 
-
+// AGREGAR UNA MASCOTA NUEVA
 
 function agregar(){
 
@@ -10,13 +10,14 @@ function agregar(){
         this.peso = peso
 
     }
-    var capturadorasnombre = document.getElementById("nombre").value;
-    var capturarraza = document.getElementById("raza").value;
-    var capturardueño = document.getElementById("dueño").value;
-    var capturarpeso = document.getElementById("peso").value;
+    let capturadorasnombre = document.getElementById("nombre").value;
+    let capturarraza = document.getElementById("raza").value;
+    let capturardueño = document.getElementById("dueño").value;
+    let capturarpeso = document.getElementById("peso").value;
     nuevaMascota = new Mascotas(capturadorasnombre, capturarraza, capturardueño, capturarpeso)
     agregarMascota()
 }
+//ARRAY 
 const nombresMascotas = [
     {nombre: "Limon", raza: "Caniche", dueño: "Karen", peso: 6},
     {nombre: "Pelusa", raza: "Angora", dueño: "Stuart", peso: 4},
@@ -30,8 +31,9 @@ const nombresMascotas = [
         nombresMascotas.push(nuevaMascota)
         document.getElementById("table").innerHTML += `<tbody><td>${nuevaMascota.nombre}</td><td>${nuevaMascota.raza}</td><td>${nuevaMascota.dueño}</td><td>${nuevaMascota.peso}</td></tbody>`
     }
+//BUSCAR MASCOTA EN EL ARRAY    
 function buscar() {
-    var porNombre = document.getElementById("buscarnombre").value;
+    let porNombre = document.getElementById("buscarnombre").value;
     buscarpeso = nombresMascotas.find(e => e.nombre == porNombre)
     document.getElementById("table2").innerHTML += `<tbody><td>${buscarpeso.nombre}</td><td>${buscarpeso.raza}</td><td>${buscarpeso.dueño}</td><td>${buscarpeso.peso}</td></tbody>`
 
