@@ -39,3 +39,5 @@ function buscar() {
 
     
 }
+const solonombres = nombresMascotas.map((el) => el.nombre)
+console.log(`Buscar con estos nombres: ${solonombres}`);
