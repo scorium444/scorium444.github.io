@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>        
+<body> 
+  <nav class="navbar navbar-light" style="background-color: aqua;">
+    <div class="container-fluid">
+      <a class="navbar-brand">Peluqueria Canina PAWS</a>
+    </div>
+  </nav>
+<div class="container">     
+  <form class="form"> 
+    <div class="boxes">
+      <h1>AGREGAR CLIENTES</h1>
+      <div ><input id="nombre" class="form_input" type="textarea" placeholder="Ingresar nombre de la Mascota" required ></div>
+      <div ><input id="raza" class="form_input" type="textarea" placeholder="Ingresar raza" required ></div>
+      <div ><input id="dueño" class="form_input" type="textarea" placeholder="Ingresar dueño" required ></div>
+      <div ><input id="peso" class="form_input" type="number" placeholder="Ingresar peso" required ></div>
+      <div><input id="boton" class="btn btn-outline-dark" type="reset" value="Agregar" onclick="agregar();"></div>
+      <table class="table" id="table">
+        <thead class="thread-inverse">
+          <tr>
+            <th>Nombre</th>
+            <th>Raza</th>
+            <th>Dueño</th>
+            <th>Peso</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>  
+  </form>  
+  
+</div> 
+<div class="container">     
+  <form class="form"> 
+    <div class="boxes">
+      <h1>BUSCAR CLIENTES</h1>
+      <div ><input id="buscarnombre" class="form_input" type="textarea" placeholder="Ingresar nombre de la Mascota" required ></div>
+      <div><input id="boton2" class="btn btn-outline-dark" type="reset" value="Buscar" onclick="buscar();"></div>
+      <table class="table" id="table2">
+        <thead class="thread-inverse">
+          <tr>
+            <th>Nombre</th>
+            <th>Raza</th>
+            <th>Dueño</th>
+            <th>Peso</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>  
+  </form>  
+  
+</div>     
+  <div id="feet">
+    <ul>
+      <li>ProyectoCoder</li>
+    </ul> 
+  </div>
+  <script src="js/funciones.js"></script>
+</body>
+</html>    

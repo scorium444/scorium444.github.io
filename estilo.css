@@ -1,0 +1,62 @@
+body{
+    background: black;
+}    
+
+.container{
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: black;
+}
+
+.boxes {
+    border-radius: 0.5%;
+    background: linear-gradient(to bottom, aqua, rgb(2, 110, 110));
+    outline: none;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.table{
+    background: linear-gradient(to bottom, transparent, rgb(2, 110, 110));
+    min-height: 140px;
+    background-color: aqua;
+}
+#feet ul{
+    position: static;
+    text-align: center;
+    list-style: none;
+    padding: 15px;
+}
+#feet ul li{
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+#feet {
+    background-color: aqua;
+}
+
+.form_input{
+    width: 100%;
+    padding: 4px;
+    margin: 6px 0%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+.form_input:focus {
+    background: linear-gradient(to bottom, transparent, rgb(28, 143, 158));
+    outline: none;
+    border-bottom: 3px solid rgb(45, 141, 158);
+}
+.boxes input[type="textarea"]{
+    min-height: 50px;
+}
