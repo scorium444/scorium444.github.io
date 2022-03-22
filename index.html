@@ -10,25 +10,25 @@
       <a class="navbar-brand">Peluqueria Canina PAWS</a>
     </div>
   </nav>
+  
 <div class="container">     
   <form class="form"> 
     <div class="boxes">
       <h1>AGREGAR CLIENTES</h1>
       <div ><input id="nombre" class="form_input" type="textarea" placeholder="Ingresar nombre de la Mascota" required ></div>
       <div ><input id="raza" class="form_input" type="textarea" placeholder="Ingresar raza" required ></div>
-      <div ><input id="dueño" class="form_input" type="textarea" placeholder="Ingresar dueño" required ></div>
-      <div ><input id="peso" class="form_input" type="number" placeholder="Ingresar peso" required ></div>
-      <div><input id="boton" class="btn btn-outline-dark" type="reset" value="Agregar" onclick="agregar();"></div>
+      <div ><input id="dueño" class="form_input" type="text" placeholder="Ingresar dueño" required ></div>
+      <div ><input id="peso" class="form_input" type="datetime-local" placeholder="Ingresar peso" required ></div>
+      <div><input id="boton" class="btn btn-outline-dark" type="reset" value="Agregar" ></div>
       <table class="table" id="table">
         <thead class="thread-inverse">
-          <tr>
             <th>Nombre</th>
             <th>Raza</th>
             <th>Dueño</th>
-            <th>Peso</th>
+            <th>Fecha</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody id="mitabla"></tbody>
       </table>
     </div>  
   </form>  
@@ -39,14 +39,14 @@
     <div class="boxes">
       <h1>BUSCAR CLIENTES</h1>
       <div ><input id="buscarnombre" class="form_input" type="textarea" placeholder="Ingresar nombre de la Mascota" required ></div>
-      <div><input id="boton2" class="btn btn-outline-dark" type="reset" value="Buscar" onclick="buscar();"></div>
+      <div><input id="boton2" class="btn btn-outline-dark" type="reset" value="Buscar" ></div>
       <table class="table" id="table2">
         <thead class="thread-inverse">
           <tr>
             <th>Nombre</th>
             <th>Raza</th>
             <th>Dueño</th>
-            <th>Peso</th>
+            <th>Fecha</th>
           </tr>
         </thead>
         <tbody></tbody>
