@@ -1,6 +1,14 @@
 const boton = document.getElementById("boton")
 // AGREGAR MASCOTAS
 boton.addEventListener("click", function(e) {
+    Toastify({
+        text: "Agregaste un Cliente Nuevo",
+        duration: 3000,
+        style: {
+            background: "linear-gradient(to right, rgb(2, 110, 110), aqua)",
+            color: "black",
+          }
+        }).showToast()
     function Mascotas(nombre, raza, dueño, peso) {
         this.nombre = nombre
         this.raza = raza
@@ -56,7 +64,6 @@ boton2.addEventListener("click",function(e){
 
 //TABLA
 const almacenados = JSON.parse(localStorage.getItem("baul"))
-// si no tiene nombre no aparece
 almacenados.forEach(element => {
     if(element.nombre != ""){
     document.getElementById("table").innerHTML += `<tbody><td>${element.nombre}</td><td>${element.raza}</td><td>${element.dueño}</td><td>${element.peso}</td></tbody>`
