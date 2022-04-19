@@ -1,19 +1,75 @@
 body{
-    background: black;
+    background: url(https://jadogmadrid.com/wp-content/uploads/2018/05/Peluqueria-canina-felina.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }    
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    transition: 0.7s;
+    padding: 20px 20px;
+}
+header.down{
+    background: rgb(189, 248, 248);
+    color: black;
+    padding: 15px 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo{
+    width: 50px;
+    position: relative;
 
+}
+
+header ul{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 15px;
+    color: rgb(17, 129, 129);
+    font-size:  1em;
+    font-weight: 400px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    transition: 0.7s;
+}
+header.down .logo{
+    color: black;
+}
+header.down ul li a{
+    color: black;
+}
 .container{
     min-height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: black;
 }
 
 .boxes {
     border-radius: 0.5%;
-    background: linear-gradient(to bottom, aqua, rgb(2, 110, 110));
+    background: linear-gradient(to bottom, rgb(189, 248, 248), rgb(17, 129, 129));
     outline: none;
     margin: 10px;
     padding: 20px;
@@ -22,9 +78,9 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .table{
-    background: linear-gradient(to bottom, transparent, rgb(2, 110, 110));
+    background: rgb(189, 248, 248);
     min-height: 140px;
-    background-color: aqua;
+    background-color: rgb(189, 248, 248);
 }
 #feet ul{
     position: static;
@@ -40,7 +96,7 @@ body{
 }
 
 #feet {
-    background-color: aqua;
+    background-color: rgb(189, 248, 248);;
 }
 
 .form_input{
@@ -53,7 +109,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 .form_input:focus {
-    background: linear-gradient(to bottom, transparent, rgb(28, 143, 158));
+    background: linear-gradient(to bottom, transparent, rgb(17, 129, 129));
     outline: none;
     border-bottom: 3px solid rgb(45, 141, 158);
 }
